@@ -10,10 +10,6 @@ export const menu = [
     {
         label: 'Blogs',
         url: '/blog'
-    },
-    {
-        label: 'Contacts',
-        url: '/contact'
     }
 
 ]

@@ -18,7 +18,7 @@ function Top() {
         <div className="container-navigasi text-neutral-200">
             <div className="navigasi fixed w-full flex justify-between bg-neutral-900 backdrop-filter backdrop-blur-xl bg-opacity-90 lg:px-24 px-4 py-4 text-neutral-200 lg:hidden">
                 <div className="logo">
-                    <Image src={Logo} width={32} height={32} alt='logo' />
+                    <a href="/"><Image src={Logo} width={32} height={32} alt='logo' /></a>
                 </div>
                 <button className="icon">
                     < HiMiniBars3BottomRight
@@ -33,7 +33,7 @@ function Top() {
                 <div className={`navigasi bg-neutral-900 backdrop-filter backdrop-blur-xl bg-opacity-90 lg:px-24 px-4 py-4 text-neutral-200 ${show ? "list-item" : "hidden"} lg:list-item`}>
                     <div className="top-menu flex justify-between">
                         <div className="logo lg:hidden">
-                            <Image src={Logo} width={32} height={32} alt='logo' />
+                            <a href="/"><Image src={Logo} width={32} height={32} alt='logo' /></a>
                         </div>
                         <div className="icon">
                             < HiMiniXMark
@@ -51,6 +51,8 @@ function Top() {
                                 </Link>
                             )
                         })}
+                        <a href="http://" className="flex py-4">Contacts</a>
+                        <a href="http://" className="flex py-4">About</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +61,7 @@ function Top() {
                 <div className="navigasi  bg-neutral-900 backdrop-filter backdrop-blur-xl bg-opacity-90 lg:px-24 px-4 py-4 text-neutral-200">
                     <div className="top-menu flex justify-between">
                         <div className="logo">
-                            <Image src={Logo} width={32} height={32} alt='logo' />
+                            <a href="/"><Image src={Logo} width={32} height={32} alt='logo' /></a>
                         </div>
                         <div className="menu lg:flex lg:space-x-8">
                             {menu.map((item, i) => {
@@ -69,6 +71,8 @@ function Top() {
                                     </Link>
                                 )
                             })}
+                            <a href="http://">Contacts</a>
+                            <a href="http://">About</a>
                         </div>
                     </div>
                 </div>
